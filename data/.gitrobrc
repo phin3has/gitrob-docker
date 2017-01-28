@@ -1,0 +1,4 @@
+---
+sql_connection_uri: postgres://gitrob:gitrob@db:5432/gitrob
+github_access_tokens:
+- [your token here, remove brackets]

@@ -1,0 +1,15 @@
+version: '2'
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_USER=gitrob
+      - POSTGRES_PASSWORD=gitrob
+  web:
+    build: .
+    volumes:
+      - ./data:/root
+    ports:
+      - "9393:9393"
+    depends_on:
+      - db
