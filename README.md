@@ -9,7 +9,7 @@ This is a docker containerized version of [gitrob](https://github.com/michenriks
 
     > If you plan on using Gitrob extensively or against a very large organization, it might be necessary to have multiple access tokens to avoid running into rate limiting. These access tokens will have to be from different user accounts."
     
-3. Clone this repo, `git clone `
+3. Clone this repo, `git clone https://github.com/awhitehatter/gitrob-docker.git`
 4. Configure `data/.gitrobrc` with your token and creds (if you have changed them)
 
 # Usage
