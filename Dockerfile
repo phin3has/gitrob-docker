@@ -14,7 +14,7 @@ RUN gem uninstall --force github_api && gem install github_api -v 0.13
 ADD ./data/.gitrobrc /root/.gitrobrc
 
 #ASSUMING YOU ARE ACCEPTING THE MIT LICENSE
-RUN echo "user accepted" > ls /usr/local/bundle/gems/gitrob-$GITROB_VERSION/agreement.txt
+RUN echo "user accepted" > /usr/local/bundle/gems/gitrob-$GITROB_VERSION/agreement.txt
 
 ENTRYPOINT ["/usr/local/bundle/bin/gitrob"]
 
